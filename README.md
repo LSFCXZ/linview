@@ -1,24 +1,29 @@
-# linview
+# linview UI组件库
 
-## Project setup
-```
-npm install
+### 快速开始
+
+1. #### 安装组件库
+
+ ```shell
+   npm i linview
+ ```
+
+   
+
+2. #### 引用组件库
+
+```js
+//引入全部
+import 'linview/dist/css/index.css';
+import lview from 'linview';
+Vue.use(lview)
+
+//按需引入
+import 'linview/dist/css/card.css'
+import Card from 'linview/dist/card.umd';
+Vue.use(Card)
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+官方文档：https://lsfcxz.github.io/linview
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+目前按需引入没有开发完成，后续完善。

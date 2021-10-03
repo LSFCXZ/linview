@@ -1,0 +1,3 @@
+//这里需要注意：一定要用以下格式，如果使用@import url()方式，会出现只打包最外层选择器的样式
+@import './card.scss';
+@import './demo.scss';

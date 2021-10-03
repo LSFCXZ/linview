@@ -1,11 +1,27 @@
 {
   "name": "linview",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.2",
+  "description": "个人开发者UI组件库",
+  "main": "dist/index.umd.js",
+  "keywords": [
+    "linview",
+    "UI",
+    "vue"
+  ],
+  "author": "bamboo_lsf",
+  "files": [
+    "dist",
+    "components"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "npm run build:js && npm run build:css",
+    "lint": "vue-cli-service lint",
+    "build:js": "webpack --config ./build/webpack.component.js",
+    "build:css": "npx gulp sass --gulpfile build/gulpfile.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "depoly": "bash ./build/deploy.sh"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -18,7 +34,15 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "gulp": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.1.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^5.0.1",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.8.2",
+    "webpack-cli": "^4.8.0"
   },
   "eslintConfig": {
     "root": true,
