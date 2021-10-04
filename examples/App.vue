@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Card imgSrc="./img/card.png" summary="Vue.js 源码全方位深入解析 全面深入理解Vue实现原理，掌握源码分析技巧"></Card>
+    <!-- <Card imgSrc="./img/card.png" summary="Vue.js 源码全方位深入解析 全面深入理解Vue实现原理，掌握源码分析技巧"></Card>
     <br />
     <Card imgSrc="./img/card.png" summary="Vue.js 源码全方位深入解析 全面深入理解Vue实现原理，掌握源码分析技巧">
       <template v-slot:footer>
@@ -9,7 +9,8 @@
           <div class="price">￥488.00</div>
         </div>
       </template>
-    </Card>
+    </Card> -->
+    <Demo></Demo>
   </div>
 </template>
 

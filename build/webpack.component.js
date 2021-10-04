@@ -24,10 +24,12 @@ module.exports = {
   entry: list,//入口文件
   mode:'production',//生产模式
   output: {
-    filename: '[name].umd.js',
+    filename: '[name].js',
     path: utlis.DIST_PATH,
     library: 'lview',
-    libraryTarget:'umd'
+    libraryTarget: 'umd',
+    umdNamedDefine: true,
+    globalObject: 'this'
   },
   plugins: [
     new VueLoaderPlugin()

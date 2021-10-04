@@ -5,4 +5,4 @@ exports.resolve = function resolve (dir) {
 }
 
 exports.APP_PATH = exports.resolve('src')
-exports.DIST_PATH = exports.resolve('dist')
+exports.DIST_PATH = exports.resolve('lib')

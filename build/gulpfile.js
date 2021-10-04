@@ -6,5 +6,5 @@ gulp.task('sass', async function () {
   return gulp.src('../components/css/**/*.scss')
     .pipe(sass())
     .pipe(minifyCSS())
-  .pipe(gulp.dest(utlis.DIST_PATH+'/css'))
+  .pipe(gulp.dest(utlis.DIST_PATH+'/lview'))
 })
