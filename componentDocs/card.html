@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>卡片组件 | LinView</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/linview/assets/css/0.styles.a2a318e7.css" as="style"><link rel="preload" href="/linview/assets/js/app.88b5e503.js" as="script"><link rel="preload" href="/linview/assets/js/2.f400ff75.js" as="script"><link rel="preload" href="/linview/assets/js/8.43cc682c.js" as="script"><link rel="preload" href="/linview/assets/js/3.26dfbbcf.js" as="script"><link rel="prefetch" href="/linview/assets/js/10.d9f6904e.js"><link rel="prefetch" href="/linview/assets/js/11.ce9c0452.js"><link rel="prefetch" href="/linview/assets/js/12.fb37732a.js"><link rel="prefetch" href="/linview/assets/js/4.fc454782.js"><link rel="prefetch" href="/linview/assets/js/5.7aebe42f.js"><link rel="prefetch" href="/linview/assets/js/6.f6b8bfad.js"><link rel="prefetch" href="/linview/assets/js/7.00b8ba51.js"><link rel="prefetch" href="/linview/assets/js/9.bf88b4b2.js">
+    <link rel="stylesheet" href="/linview/assets/css/0.styles.a2a318e7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/linview/" class="home-link router-link-active"><!----> <span class="site-name">LinView</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/linview/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/linview/componentDocs/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/linview/update/index.html" class="nav-link">
+  更新日志
+</a></div><div class="nav-item"><a href="https://github.com/LSFCXZ/linview" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.npmjs.com/package/linview" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  NPM
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/linview/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/linview/componentDocs/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/linview/update/index.html" class="nav-link">
+  更新日志
+</a></div><div class="nav-item"><a href="https://github.com/LSFCXZ/linview" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.npmjs.com/package/linview" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  NPM
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/linview/componentDocs/" aria-current="page" class="sidebar-link">简介</a></li><li><a href="/linview/componentDocs/start.html" class="sidebar-link">快速开始</a></li><li><a href="/linview/componentDocs/card.html" aria-current="page" class="active sidebar-link">卡片</a><ul class="sidebar-sub-headers"></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="卡片组件"><a href="#卡片组件" class="header-anchor">#</a> 卡片组件</h1> <h3 id="示例"><a href="#示例" class="header-anchor">#</a> 示例：</h3> <p><div class="l-card" data-v-7d824fd0><div class="l-card-img" data-v-7d824fd0><img src="/linview/card.png" alt="img" data-v-7d824fd0></div> <div class="l-card-summary" data-v-7d824fd0>
+    Vue.js 源码全方位深入解析 全面深入理解Vue实现原理，掌握源码分析技巧
+  </div> </div></p> <h3 id="代码"><a href="#代码" class="header-anchor">#</a> 代码</h3> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>card</span> 
+      <span class="token attr-name">imgSrc</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/linview/card.png<span class="token punctuation">&quot;</span></span> 
+      <span class="token attr-name">summary</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Vue.js 源码全方位深入解析 全面深入理解Vue实现原理，掌握源码分析技巧<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>card</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="attributes"><a href="#attributes" class="header-anchor">#</a> Attributes</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">说明</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">是否必要</th> <th style="text-align:center;">默认值</th></tr></thead> <tbody><tr><td style="text-align:center;">width</td> <td style="text-align:center;">卡片宽度</td> <td style="text-align:center;">Number</td> <td style="text-align:center;">false</td> <td style="text-align:center;">-</td></tr> <tr><td style="text-align:center;">imgSrc</td> <td style="text-align:center;">图片资源地址</td> <td style="text-align:center;">String</td> <td style="text-align:center;">true</td> <td style="text-align:center;">-</td></tr> <tr><td style="text-align:center;">imgHeight</td> <td style="text-align:center;">图片高度</td> <td style="text-align:center;">Number</td> <td style="text-align:center;">false</td> <td style="text-align:center;">-</td></tr> <tr><td style="text-align:center;">summary</td> <td style="text-align:center;">卡片概要</td> <td style="text-align:center;">String/Slot</td> <td style="text-align:center;">false</td> <td style="text-align:center;">-</td></tr> <tr><td style="text-align:center;">footer</td> <td style="text-align:center;">卡片底部</td> <td style="text-align:center;">Slot</td> <td style="text-align:center;">false</td> <td style="text-align:center;">-</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/linview/componentDocs/start.html" class="prev">
+        快速开始
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/linview/assets/js/app.88b5e503.js" defer></script><script src="/linview/assets/js/2.f400ff75.js" defer></script><script src="/linview/assets/js/8.43cc682c.js" defer></script><script src="/linview/assets/js/3.26dfbbcf.js" defer></script>
+  </body>
+</html>
